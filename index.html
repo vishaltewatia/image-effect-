@@ -1,13 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <title>Change Image on Hover in CSS</title>
-    <link rel="stylesheet" href="style2.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      body {
+        background-color: rgb(0, 0, 0);
+        justify-content: center;
+        text-align: center;
+      }
+      /*   css code*/
+      .img {
+        background: url(./mhadev.png);
+        background-size: cover;
+        width: 300px;
+        filter: drop-shadow(10px 8px 66px rgb(0, 238, 255));
+        animation: untoldcoding 1.5s linear infinite;
+      }
+
+      @keyframes untoldcoding {
+        5% {
+          filter: drop-shadow(10px 8px 66px rgb(238, 255, 0));
+        }
+        15% {
+          filter: drop-shadow(10px 8px 66px rgb(255, 255, 255));
+        }
+        35% {
+          filter: drop-shadow(10px 8px 66px rgb(0, 119, 255));
+        }
+        55% {
+          filter: drop-shadow(10px 8px 66px rgb(0, 255, 17));
+        }
+        75% {
+          filter: drop-shadow(10px 8px 66px rgb(255, 0, 132));
+        }
+        100% {
+          filter: drop-shadow(10px 8px 66px rgb(0, 255, 251));
+        }
+      }
+      .img:hover {
+        animation: untoldcoding3 1.5s linear infinite;
+      }
+      @keyframes untoldcoding3 {
+        5% {
+          filter: drop-shadow(10px 8px 60px rgb(238, 255, 0));
+        }
+        15% {
+          filter: drop-shadow(80px 8px 66px rgb(255, 255, 255));
+        }
+        35% {
+          filter: drop-shadow(10px 8px 66px rgb(0, 119, 255));
+        }
+        55% {
+          filter: drop-shadow(10px 80px 66px rgb(0, 255, 17));
+        }
+        75% {
+          filter: drop-shadow(70px 8px 66px rgb(255, 0, 132));
+        }
+        100% {
+          filter: drop-shadow(0px 8px 66px rgb(0, 255, 251));
+        }
+      }
+
+      .text {
+        color: transparent;
+        font-family: "Poppins", sans-serif;
+        font-weight: 900;
+        font-size: 50px;
+        -webkit-text-stroke: 1px white;
+
+        animation: untoldcoding1 1.2s linear infinite;
+      }
+      @keyframes untoldcoding1 {
+        5% {
+          text-shadow: 0 1px 81px rgb(238, 255, 0);
+        }
+        15% {
+          text-shadow: 0 1px 81px rgb(255, 255, 255);
+        }
+        35% {
+          text-shadow: 0 1px 81px rgb(0, 119, 255);
+        }
+        55% {
+          text-shadow: 0 1px 81px rgb(0, 255, 17);
+        }
+        75% {
+          text-shadow: 0 1px 81px rgb(255, 0, 132);
+        }
+        100% {
+          text-shadow: 0 1px 81px rgb(0, 255, 251);
+        }
+      }
+    </style>
   </head>
   <body>
-    <div class="maim">
-      <div class="card"></div>
+    <div class="container">
+      <img class="img" src="mhadev.png" alt="" />
       <div class="text">जय महादेव</div>
     </div>
   </body>
