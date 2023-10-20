@@ -1,0 +1,67 @@
+body {
+  background-color: rgb(0, 0, 0);
+  justify-content: center;
+  text-align: center;
+}
+.card {
+  width: 100%;
+  height: 110vh;
+  background: url(./mhadev.png) no-repeat;
+  display: inline-block;
+  animation: untoldcoding 1.5s linear infinite;
+  margin-left: 15em;
+}
+.card:hover {
+  background: url(./1.png) no-repeat;
+}
+
+@keyframes untoldcoding {
+  5% {
+    filter: drop-shadow(10px 8px 66px rgb(238, 255, 0));
+  }
+  15% {
+    filter: drop-shadow(10px 8px 66px rgb(255, 255, 255));
+  }
+  35% {
+    filter: drop-shadow(10px 8px 66px rgb(0, 119, 255));
+  }
+  55% {
+    filter: drop-shadow(10px 8px 66px rgb(0, 255, 17));
+  }
+  75% {
+    filter: drop-shadow(10px 8px 66px rgb(255, 0, 132));
+  }
+  100% {
+    filter: drop-shadow(10px 8px 66px rgb(0, 255, 251));
+  }
+}
+
+.text {
+  color: transparent;
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-size: 50px;
+  -webkit-text-stroke: 1px white;
+  margin-left: 5em;
+  animation: untoldcoding1 1.2s linear infinite;
+}
+@keyframes untoldcoding1 {
+  5% {
+    text-shadow: 0 1px 81px rgb(238, 255, 0);
+  }
+  15% {
+    text-shadow: 0 1px 81px rgb(255, 255, 255);
+  }
+  35% {
+    text-shadow: 0 1px 81px rgb(0, 119, 255);
+  }
+  55% {
+    text-shadow: 0 1px 81px rgb(0, 255, 17);
+  }
+  75% {
+    text-shadow: 0 1px 81px rgb(255, 0, 132);
+  }
+  100% {
+    text-shadow: 0 1px 81px rgb(0, 255, 251);
+  }
+}
